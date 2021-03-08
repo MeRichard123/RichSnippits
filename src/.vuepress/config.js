@@ -38,6 +38,7 @@ module.exports = {
     editLinks: false,
     displayAllHeaders: true,
     docsDir: "",
+    logo: "https://i.imgur.com/tKXBsZT.png",
     smoothScroll: true,
     editLinkText: "",
     lastUpdated: false,

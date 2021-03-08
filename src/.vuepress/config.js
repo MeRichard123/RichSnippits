@@ -20,6 +20,10 @@ module.exports = {
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
       "meta",
+      { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+    ],
+    [
+      "meta",
       { name: "apple-mobile-web-app-status-bar-style", content: "black" },
     ],
   ],
@@ -30,10 +34,11 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "",
+    repo: "https://github.com/MeRichard123/RichSnippits",
     editLinks: false,
     displayAllHeaders: true,
     docsDir: "",
+    smoothScroll: true,
     editLinkText: "",
     lastUpdated: false,
     nav: [
@@ -47,7 +52,7 @@ module.exports = {
         {
           title: "RichSnippits",
           collapsable: false,
-          children: [""],
+          children: ["", "contributing"],
         },
         {
           title: "Python",

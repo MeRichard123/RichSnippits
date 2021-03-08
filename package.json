@@ -10,7 +10,8 @@
   "repository": "MeRichard123/RichSnippits/RichSippits",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "deploy": "npm run build && surge --domain https://richsnippits.surge.sh/ ./src/.vuepress/dist"
   },
   "license": "MIT",
   "devDependencies": {

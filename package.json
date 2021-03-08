@@ -1,0 +1,20 @@
+{
+  "name": "rich-sippits",
+  "version": "0.0.1",
+  "description": "Code Snippets for EveryOne",
+  "main": "index.js",
+  "authors": {
+    "name": "RichardMe123",
+    "email": "rcoric03@gmail.com"
+  },
+  "repository": "MeRichard123/RichSnippits/RichSippits",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {}
+}

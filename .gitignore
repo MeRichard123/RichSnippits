@@ -1,0 +1,28 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,vscode,vuejs
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,vscode,vuejs
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### vscode ###
+!.vscode/settings.json
+!.vscode/extensions.json
+
+### Vuejs ###
+# Recommended template: Node.gitignore
+
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,vscode,vuejs

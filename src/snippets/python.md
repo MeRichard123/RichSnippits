@@ -44,3 +44,24 @@ sorted_values = sorted(dictionary,key=lambda k:dictionary[k], reverse=True)
 #Sorting by Key
 sort_by_keys = sorted(dictionary)
 ```
+
+### Translate Strings - replace characters
+
+```python
+"""
+Syntax : maketrans(str1, str2, str3)
+Parameters :
+str1 : Specifies the list of characters that need to be replaced.
+str2 : Specifies the list of characters with which the characters need to be replaced.
+str3 : Specifies the list of characters that needs to be deleted.
+Returns : Returns the translation table which specifies the conversions that can be used by translate()
+"""
+table = {97:122}
+string = "this is a vaary variable sentance with lats af a's"
+print(string.translate(table))
+# this is z vzzry vzrizble sentznce with lzts zf z's
+
+# With Translate Table
+table_trans = string.maketrans("a","z")
+print(string.translate(table_trans))
+```

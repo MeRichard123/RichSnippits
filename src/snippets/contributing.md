@@ -10,6 +10,13 @@ Currently we are accepting the following:
 - React JS
 - React Typescript
 
+### Guidance:
+
+1. Make sure your new snippet is not just a re-write of another.
+2. Make sure your new snippet is truly new
+3. Please don't alter other snippets :3 thank you
+4. If you're not sure feel free to submit an issue and ask any questions
+
 If you would like to submit a different snippet. Please submit an issue like so:
 
 ![issue_demo](../assets/issue-example.png)

@@ -37,6 +37,7 @@ export default {
         "https://api.github.com/repos/MeRichard123/RichSnippits/contributors"
       );
       this.contributors = data;
+      console.log(data);
     },
   },
 };

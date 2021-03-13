@@ -24,3 +24,47 @@ useEffect(() => {
   //   Empty dependency array: only call on mount
 }, []);
 ```
+
+### Make Scrollable Fixed Navbar:
+
+When scrolling down navbar gets a new background Color and change it height.
+make sure you return in useEffect before you change your component.
+[Live link](https://codesandbox.io/s/react-scroll-navbar-z76ig)
+
+```javascript
+import React, { useState, useEffect } from "react";
+export default function App() {
+  const [navSize, setnavSize] = useState("10rem");
+  const [navColor, setnavColor] = useState("transparent");
+  const listenScrollEvent = () => {
+    window.scrollY > 10 ? setnavColor("#252734") : setnavColor("transparent");
+    window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, []);
+
+  return (
+    <div>
+      <nav
+        style={{
+          backgroundColor: navColor,
+          height: navSize,
+          transition: "all 1s",
+        }}
+      >
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Project</li>
+          <li>Skills</li>
+          <li>Contact </li>
+        </ul>
+      </nav>
+    </div>
+  );
+}
+```

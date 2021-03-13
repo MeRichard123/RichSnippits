@@ -47,6 +47,10 @@ module.exports = {
         text: "Snippets",
         link: "/snippets/",
       },
+      {
+        text: "Contributors",
+        link: "/contributors/",
+      },
     ],
     sidebar: {
       "/snippets/": [

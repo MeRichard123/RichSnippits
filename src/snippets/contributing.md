@@ -58,7 +58,7 @@ npm i && npm run dev
        git checkout main
        git add .
        git commit -m "Your commit message"
-       git pull upstream master && git push -u origin master
+       git pull upstream main
        git checkout -b hotfix/name-of-change
    ```
 8. Now create the pull request: `git push -u origin hotfix/name-of-change`

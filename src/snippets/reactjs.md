@@ -31,7 +31,7 @@ When scrolling down navbar gets a new background Color and change it height.
 make sure you return in useEffect before you change your component.
 [Live link](https://codesandbox.io/s/react-scroll-navbar-z76ig)
 
-```javascript
+```jsx
 import React, { useState, useEffect } from "react";
 export default function App() {
   const [navSize, setnavSize] = useState("10rem");

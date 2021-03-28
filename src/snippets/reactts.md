@@ -4,7 +4,7 @@
 
 When using React Router sometimes you need private routes which only authenticated users can access. If you're not authenticated then you should be sent back home. This render props component which extends the React Router Route component does just that.
 
-```typescript
+```tsx
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 

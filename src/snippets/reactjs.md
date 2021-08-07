@@ -68,3 +68,52 @@ export default function App() {
   );
 }
 ```
+
+### useCallback for onChange state changes
+
+We can memoize the state function and hold on to the value rather than recreating the value.
+This could have some performance advantages however there really isn't much difference whether your
+handlers are inline or not.
+
+```jsx
+import {useState, useCallback} from "react";
+
+const App = () => {
+  const [search, updateSearch] = useState("");
+  const onSearchChange = useCallback((evt)=> updateSearch(evt.target.value), [])
+
+  return(
+    <input
+      value={search}
+      placeholder="Enter a value"
+      onChange={onSearchChange}
+    />
+  )
+}
+```
+
+### Using Styled Components with Framer Motion
+We can use styled components with framer motion by using the styled() function.
+
+```jsx
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
+const AnimContainer = styled(motion.div)`
+  position: absolute;
+  inset: 0;
+  background: green;
+`;
+
+const Component = () => {
+  return (
+    <AnimContainer
+        initial={{ y: -250 }}
+        animate={{ y: -10 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+    >
+      Content
+    </AnimContainer>
+  )
+}
+```

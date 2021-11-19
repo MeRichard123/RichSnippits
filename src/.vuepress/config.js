@@ -67,7 +67,7 @@ module.exports = {
         {
           title: "Javascript",
           collapsable: false,
-          children: ["reactjs", "vuejs"],
+          children: ["javascript","reactjs", "vuejs"],
         },
         {
           title: "Typescript",
